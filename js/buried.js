@@ -2,11 +2,8 @@
 
 $(function() {
 
-  Parse.$ = jQuery;
-
-  // Initialize Parse with your Parse application javascript keys
-  Parse.initialize("XDnTN3cpdPIhzRua58wPlXAJE41vKCHNlAmqAchK",
-"IIZqLo8MNAQOv3sXANbAs2K2fojb2qPAkOb5CrqK");
+  ParseModule = require('module.js');
+  Parse = ParseModule.initialize();
 				   
 	var BuryItView = Parse.View.extend({
 	  events: {
