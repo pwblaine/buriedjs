@@ -5,4 +5,4 @@ var inititalize = function() {
     return ParseModule.Parse;
 };
 
-exports.ParseInitialize = inititalize();
+exports.ParseInitialize = inititalize;
