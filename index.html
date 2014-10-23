@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>buried.</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<link rel="stylesheet" media="only screen and (max-width: 800px) and (min-width:366px)" href="css/mobile.css" />
+<link rel="stylesheet" media="only screen and (max-width: 365px)" href="css/370.css" />
+<link rel="stylesheet" media="only screen and (min-width: 801px)" href="css/desktop.css" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="//underscorejs.org/underscore.js"></script>
+    <script src="//www.parsecdn.com/js/parse-1.1.15.min.js"></script>
+    <script src="js/buried.js"></script>
+      <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+  <script>var __adobewebfontsappname__="dreamweaver"</script>
+  <script src="http://use.edgefonts.net/comfortaa:n3,n4:default;calligraffitti:n4:default.js" type="text/javascript"></script>
+
+
+<style type="text/css">
+.home {
+	-moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #378de5) );
+	background:-moz-linear-gradient( center top, #79bbff 5%, #378de5 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#378de5');
+	background-color:#79bbff;
+	-webkit-border-top-left-radius:42px;
+	-moz-border-radius-topleft:42px;
+	border-top-left-radius:42px;
+	-webkit-border-top-right-radius:42px;
+	-moz-border-radius-topright:42px;
+	border-top-right-radius:42px;
+	-webkit-border-bottom-right-radius:42px;
+	-moz-border-radius-bottomright:42px;
+	border-bottom-right-radius:42px;
+	-webkit-border-bottom-left-radius:42px;
+	-moz-border-radius-bottomleft:42px;
+	border-bottom-left-radius:42px;
+	text-indent:0;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	color:#eeedff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:38px;
+	line-height:38px;
+	width:260px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 4px #528ecc;
+}
+.home:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff) );
+	background:-moz-linear-gradient( center top, #378de5 5%, #79bbff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff');
+	background-color:#378de5;
+}.home:active {
+	position:relative;
+	top:1px;
+}</style>
+</head>
+
+<body> <!-- 553px height -->
+<!-- Start of StatCounter Code for Dreamweaver -->
+<script type="text/javascript">
+var sc_project=9541376; 
+var sc_invisible=1; 
+var sc_security="0e09cbd7"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="site stats"
+href="http://statcounter.com/free-web-stats/"
+target="_blank"><img class="statcounter"
+src="http://c.statcounter.com/9541376/0/0e09cbd7/1/"
+alt="site stats"></a></div></noscript>
+<!-- End of StatCounter Code for Dreamweaver -->
+<div id="buriedapp">
+
+
+<div id="logo-div"><img src="images/buriedlogo.png" /></div>
+<div class="spacer" id="text-logo"><h2>buried.</h2></div>
+
+<div class="confirmation" id="confirmation"></div>
+
+<div class="content"></div>
+
+<div id="blurb-div">
+  <div id="top-blurb">
+  <p>Having introspective thoughts?</p>
+  <p>Are you a writer just struck with <span id="blurb-poetic">the poetic lightening of </span>inspiration?</p>
+  <p>Have a message you're not yet ready to send?</p>
+  <div class="big_spacer"></div>
+  <p><b>buried.</b> lets you revisit these thoughts later</p>
+  <p>without having to worry about losing them</p>
+  <div class="big_spacer"></div>
+  <p><u>It's As Simple As 1, 2, 3</u></p>
+  <div class="big_spacer"></div>
+  <p><b>1)</b> Enter the email of yourself or another</p>
+  <p><b>2)</b> Leave your thought in the text field</p>
+  <p><b>3)</b> Select how long you want it buried</p>
+  <div class="big_spacer"></div>
+  <p>That's all! Your thought won't be unearthed</p>
+  <p>Until it resurfaces in your inbox and your life</p>
+  </div>
+  <div id="bottom-blurb">
+  </div>
+</div>
+<div id="curious-div">
+<button class="curious" id="curious" onClick="console.log('curious clicked');$('#curious-div').hide();$('#blurb-div').show();$('#curious-other-div').show();$('.content').hide();$('.confirmation').hide();">get help</button>
+</div>
+<div id="curious-other-div">
+<button class="curious" id="i-get-it" onClick="console.log('curious clicked');$('#curious-div').show();$('#curious-other-div').hide();$('#blurb-div').hide();$('.content').show();$('.confirmation').show();">i'm ready</button>
+</div>
+
+<script type="text/template" id="bury-it-template">
+<div class="bury-it">
+        <form class="bury-it-form" name="bury-it-form">
+          <h2 id="bury-title">bury a thought</h2>
+          <ul>
+          <li>
+          	<input type="text" id="email" placeholder="email" class="text-field" /> 
+          </li>
+          <li id="phone-number-li">
+          	<span>(</span>
+			<input type="text" id="area-code" class="text-field" placeholder="###" maxlength="3" />
+			<span>)</span>
+			<input type="text" id="prefix" class="text-field" placeholder="###" maxlength="3" />
+			<span>-</span>
+          	<input type="text" id="suffix" class="text-field" placeholder="####" maxlength="4" /> 
+          </li>
+          <li>
+            <input type="textarea" id="thought-to-bury"  class="text-field" placeholder="leave a thought here you want to bury..." value="" />
+          </li>
+		  <div class="inline-block"><input type="radio" id="soon" class="radio-button" value="soon" checked="checked" name="timeframe"><label style="padding-right:10px;" for="soon" onClick="console.log('soon clicked');$('.confirmation').html('<p>your thought will unearth during the next 24 hours</p>').show();$('#confirmation').css('color','#666666');">soon</label>
+		  <input type="radio" id="later" class="radio-button" value="later" name="timeframe"><label style="padding-right:10px;" for="later" onClick="console.log('later clicked');$('.confirmation').html('<p>your thought will unearth during the next 2-7 days</p>').show();$('#confirmation').css('color','#666666');">later</label></div>
+		  <div class="inline-block" id="bottom-buttons"><input type="radio" id="someday" class="radio-button" value="someday" name="timeframe"><label style="padding-right:10px;" for="someday" onClick="console.log('someday clicked');$('.confirmation').html('<p>your thought will unearth during the next 1-4 weeks</p>').show();$('#confirmation').css('color','#666666');"> someday</label>
+		  <input type="radio" id="forgotten" value="forgotten" class="radio-button" name="timeframe"><label for="forgotten" onClick="console.log('forgotten clicked');$('.confirmation').html('<p>your thought will unearth during the next 1-3 months</p>').show();$('#confirmation').css('color','#666666');">forgotten</label></div>
+		  </li>
+		  <li id="bury-it-button-li">
+          <button class="bury-it-button">bury it</button>
+          </li>
+          </ul>
+        </form>
+</div>
+</script>
+</div>
+<div style="margin-top:-10px;margin-bottom:15px;">&nbsp;</div>
+</body>
+</html>

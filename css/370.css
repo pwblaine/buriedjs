@@ -1,0 +1,284 @@
+@charset "utf-8";
+/* CSS Document */
+
+body,td,th,input {
+	font-family: comfortaa;
+	font-style: normal;
+	font-weight: 300;
+}
+
+body {
+	width:100%;
+	background-color:#ECECEC;
+	margin-left:0;
+}
+	
+#buriedapp {
+	width:95%;
+	text-align:center;
+	display:block;
+	margin:20px auto;
+	background-color:#F7F7F7;
+	border-style:solid;
+	border-radius:50px;
+	border-color:#E4E4E4;
+}
+
+.content {
+	margin-top:0;
+	padding-left:-15px;
+	padding-right:-15px;
+}
+
+#logo-div {
+	margin-top:5px;
+	display:none;
+}
+
+#logo-div img {
+}
+
+
+#bury-title {
+	display:none;
+}
+
+input {
+	text-align:center;
+	border-radius:15px;
+	border-style:solid;
+	border-color:#E0E0E0;
+}
+
+.text-field {
+	width:210px;
+}
+
+#email {
+	width:210px;
+	margin-top:10px;
+}
+
+#area-code {
+	width:25px;
+}
+
+#prefix {
+	width:25px;
+}
+
+#suffix {
+	width:35px;
+}
+
+#thought-to-bury {
+	width:90%;
+}
+
+ul {
+	padding-left:0;
+	margin-top: 5px;
+	margin-bottom:5px;
+}
+
+li {
+	list-style:none;
+	list-style-type: none;
+	margin-top: 0;
+	margin-right: auto;
+	margin-left: 0;
+	margin-bottom: 0;
+	list-style-image: none;
+}
+
+.confirmation {
+	display:none;
+	margin-top:5px;
+	margin-bottom: 10px;
+	font-weight:500;
+}
+
+.red {
+	color:#6F0008;
+}
+
+.green {
+	color:#196024;
+}
+
+.confirmation p {
+	margin-top:0;
+	margin-bottom:0;
+	font-size:14px;
+}
+
+#blurb-div {
+	display:none;
+	padding-left:15px;
+	padding-right:15px;
+	margin-top:18px;
+	margin-bottom:10px;
+}
+
+#blurb-div p {
+	display:block;
+	font-size:13px;
+	margin-top:0;
+	margin-bottom:0;
+}
+
+.spacer {
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+.big_spacer {
+	margin-top:15px;
+}
+
+#blurb-poetic {
+	display:none;
+}
+
+.bury-it-form {
+	padding-top:0;
+	padding-bottom:0;
+	margin-top:0;
+	margin-bottom:0;
+}
+
+h2 {
+	padding-top:0;
+	padding-bottom:0;
+	margin-bottom:0;
+	font-size:24px;
+	font-weight:normal;
+}
+
+u {
+	text-decoration:underline;
+	font-weight:normal;
+}
+
+#phone-number-li {
+	display:none;
+}
+
+label {
+	font-size:14px;
+	padding-right:0px;
+	vertical-align:text-top;
+	line-height: normal;
+}
+
+#forgotten-label {
+	padding-right:0px;
+}
+
+#bury-it-button-li {
+	margin-top:20px;
+}
+
+button {
+-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f9f9f9), color-stop(1, #e9e9e9) );
+	background:-moz-linear-gradient( center top, #f9f9f9 5%, #e9e9e9 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9f9', endColorstr='#e9e9e9');
+	background-color:#f9f9f9;
+	-webkit-border-top-left-radius:42px;
+	-moz-border-radius-topleft:42px;
+	border-top-left-radius:42px;
+	-webkit-border-top-right-radius:42px;
+	-moz-border-radius-topright:42px;
+	border-top-right-radius:42px;
+	-webkit-border-bottom-right-radius:42px;
+	-moz-border-radius-bottomright:42px;
+	border-bottom-right-radius:42px;
+	-webkit-border-bottom-left-radius:42px;
+	-moz-border-radius-bottomleft:42px;
+	border-bottom-left-radius:42px;
+	text-indent:0;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#666666;
+	font-family:comfortaa;
+	font-size:14px;
+	font-weight:normal;
+	font-style:normal;
+	height:36px;
+	line-height:24px;
+	width:154px;
+	text-decoration:none;
+	text-align:center;
+}
+button.curious{
+	font-size:13px;
+	height:32px;
+	width:124px;
+	margin-top:20px;
+	margin-bottom:30px;
+	letter-spacing:2px;
+	}
+	button.bury-it-button
+	{
+		margin-top:5px;
+		margin-bottom:5px;
+		letter-spacing:3px;
+		font-weight:500;
+	}
+	
+button:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #e9e9e9), color-stop(1, #f9f9f9) );
+	background:-moz-linear-gradient( center top, #e9e9e9 5%, #f9f9f9 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e9e9e9', endColorstr='#f9f9f9');
+	background-color:#e9e9e9;
+}button:active {
+	position:relative;
+	top:1px;
+}
+
+#curious-other-div {
+	display:none;
+}
+
+
+#thought-to-bury {
+margin-top: 25px;
+margin-bottom: 25px;
+height: 88px;
+word-wrap: break-word;
+line-height: normal;
+word-break: break-word;
+}
+
+#curious-other-div {
+	display:none;
+}
+
+#curious-div {
+	background-color:F3F3F3;
+}
+
+.blurb-top-margin{
+	margin-top:10px;
+}
+
+#text-logo {
+	margin-bottom:15px;
+}
+
+b {
+	font-weight:normal;
+	text-decoration:none;
+}
+
+.inline-block
+{display:inline-block;}
+
+#bottom-buttons
+{margin-top:10px;}
+
+#i-get-it
+{margin-top:34px;}
